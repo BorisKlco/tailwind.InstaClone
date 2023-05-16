@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-start gap-4 h-12 py-8 pl-8 text-white
+        rounded-md
+        hover:bg-gray-700
+        hover:rounded-xl
+        transition-all
+        duration-300
+        ease-linear
+        cursor-pointer;
+    }
+}

@@ -5,7 +5,7 @@ import { HiOutlineHome } from "react-icons/hi";
 const SideBar = () => {
   return (
     <div
-      className="fixed top-0 left-0 h-screen lg:w-1/5 md:w-1/4 w-1/3 flex flex-col 
+      className="fixed top-0 left-0 h-screen lg:w-1/5 md:w-1/4 w-1/3 px-4 flex flex-col 
     bg-gray-900 text-white shadow-lg
     border-r-2 border-solid border-slate-600"
     >
@@ -22,7 +22,7 @@ const SideBar = () => {
 const SideBarIcon = ({ icon, text }) => (
   <div className="sidebar-icon">
     {icon}
-    <p className="sm:scale-0 lg:scale-100">{text}</p>
+    <p className="lg:scale-100 md:scale-100 scale-0">{text}</p>
   </div>
 );
 

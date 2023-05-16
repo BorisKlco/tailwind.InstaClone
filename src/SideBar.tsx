@@ -19,7 +19,12 @@ const SideBar = () => {
   );
 };
 
-const SideBarIcon = ({ icon, text }) => (
+interface SidebarIconProps {
+  icon: any;
+  text: string;
+}
+
+const SideBarIcon: React.FC<SidebarIconProps> = ({ icon, text }) => (
   <div className="sidebar-icon">
     {icon}
     <p className="lg:scale-100 md:scale-100 scale-0">{text}</p>
